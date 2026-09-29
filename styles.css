@@ -1,0 +1,139 @@
+:root {
+  color-scheme: light;
+  --paper: #f7f6f1;
+  --ink: #202725;
+  --green: #234c31;
+  --blue: #233f55;
+  --stone: #87847b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 0;
+  background: var(--paper);
+}
+
+body {
+  margin: 0;
+  min-width: 0;
+  color: var(--ink);
+  background: var(--paper);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1rem;
+  line-height: 1.65;
+  text-rendering: optimizeLegibility;
+}
+
+.page {
+  width: min(100% - 2rem, 67rem);
+  margin-inline: auto;
+  padding: clamp(3rem, 8vw, 7rem) 0 clamp(3.5rem, 8vw, 6rem);
+}
+
+.masthead {
+  width: min(100%, 58rem);
+}
+
+.logo {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.rule {
+  width: 100%;
+  height: 1px;
+  margin: clamp(1.75rem, 4vw, 3rem) 0 clamp(2.25rem, 5vw, 4rem);
+  background: color-mix(in srgb, var(--stone) 62%, transparent);
+}
+
+.introduction {
+  max-width: 49rem;
+}
+
+h1,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  margin-bottom: 1rem;
+  color: var(--green);
+  font-size: clamp(1.7rem, 4vw, 2.8rem);
+  font-weight: 600;
+  line-height: 1.13;
+  letter-spacing: -0.025em;
+}
+
+.introduction p {
+  margin-bottom: 0;
+  font-size: clamp(1.08rem, 1.7vw, 1.28rem);
+  line-height: 1.7;
+}
+
+.status {
+  margin-top: clamp(3.5rem, 8vw, 6.5rem);
+}
+
+.status p {
+  margin-bottom: 0.45rem;
+}
+
+.status .eyebrow {
+  margin-bottom: 1.2rem;
+  color: var(--blue);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.status a {
+  display: inline-block;
+  margin-top: 0.3rem;
+  color: var(--blue);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.84rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.3em;
+  text-transform: uppercase;
+}
+
+.status a:hover {
+  color: var(--green);
+}
+
+.status a:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 5px;
+}
+
+@media (max-width: 36rem) {
+  .page {
+    width: min(100% - 2.25rem, 67rem);
+  }
+
+  .masthead {
+    width: calc(100% + 0.5rem);
+    margin-left: -0.25rem;
+  }
+
+  .introduction p {
+    line-height: 1.62;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+  }
+}
