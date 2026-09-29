@@ -1,249 +1,65 @@
 :root {
   color-scheme: light;
-  --paper: #f6f3eb;
-  --ink: #171b18;
-  --green: #234a39;
-  --blue: #163e58;
-  --rust: #8b4b22;
+  background: #f0ede6;
 }
 
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
 html,
 body {
   min-width: 0;
   min-height: 100%;
   margin: 0;
+  background: #f0ede6;
 }
 
-html { background: var(--paper); }
-
 body {
-  color: var(--ink);
-  background-color: var(--paper);
-  background-image:
-    radial-gradient(circle at 17% 23%, rgb(60 50 35 / 0.035) 0 0.7px, transparent 0.9px),
-    radial-gradient(circle at 78% 62%, rgb(60 50 35 / 0.025) 0 0.6px, transparent 0.85px);
-  background-size: 7px 7px, 11px 11px;
-  font-family: Georgia, "Times New Roman", serif;
-  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
 }
 
 .page {
-  position: relative;
   display: flex;
+  width: 100%;
   min-height: 100svh;
-  flex-direction: column;
-  align-items: center;
-  overflow: hidden;
-  padding: clamp(1.15rem, 2.6vh, 2rem) 1.5rem 0;
-  text-align: center;
+  justify-content: center;
 }
 
-.masthead {
+.approved-page {
   position: relative;
-  z-index: 1;
-  width: min(45vw, 64vh, 44rem);
-  min-width: 28rem;
+  width: min(100%, 1536px);
+  align-self: flex-start;
 }
 
-.logo {
+.approved-page img {
   display: block;
   width: 100%;
   height: auto;
-  mix-blend-mode: multiply;
 }
 
-.introduction,
-.status {
-  position: relative;
-  z-index: 1;
-}
-
-.introduction {
-  width: min(100%, 63rem);
-  margin-top: clamp(-1.4rem, -2vh, -0.75rem);
-}
-
-.tagline-lockup {
-  display: grid;
-  grid-template-columns: minmax(2.5rem, 1fr) auto minmax(2.5rem, 1fr);
-  align-items: center;
-  gap: clamp(1.5rem, 3vw, 2.5rem);
-}
-
-.tagline-lockup span {
-  height: 1px;
-  background: var(--green);
-  opacity: 0.82;
-}
-
-h1,
-p { margin-top: 0; }
-
-h1 {
-  margin-bottom: 0;
-  color: var(--green);
-  font-size: clamp(0.86rem, 1.22vw, 1.28rem);
-  font-weight: 600;
-  line-height: 1.1;
-  letter-spacing: 0.31em;
-  text-transform: uppercase;
-  white-space: nowrap;
-}
-
-.introduction > p {
-  max-width: 55rem;
-  margin: clamp(1.5rem, 3.3vh, 2.4rem) auto 0;
-  font-size: clamp(1.05rem, 1.55vw, 1.52rem);
-  line-height: 1.48;
-}
-
-.status { margin-top: clamp(1.2rem, 2.5vh, 1.9rem); }
-
-.divider {
-  display: block;
-  width: 5.75rem;
-  height: 2px;
-  margin: 0 auto clamp(1.15rem, 2.3vh, 1.7rem);
-  background: var(--rust);
-}
-
-.coming-soon {
-  margin-bottom: clamp(0.3rem, 0.8vh, 0.65rem);
-  color: var(--blue);
-  font-size: clamp(3rem, 5.2vw, 5.1rem);
-  font-weight: 700;
-  line-height: 0.95;
-  letter-spacing: 0.035em;
-  text-transform: uppercase;
-}
-
-.status > p:not(.coming-soon) {
-  margin-bottom: clamp(0.8rem, 1.7vh, 1.25rem);
-  font-size: clamp(1.05rem, 1.65vw, 1.55rem);
-  line-height: 1.35;
-}
-
-.status a {
-  display: inline-flex;
-  min-height: 3.8rem;
-  align-items: center;
-  justify-content: center;
-  padding: 0.9rem 1.65rem 0.85rem 1.9rem;
-  border: 1px solid rgb(10 39 29 / 0.5);
+.editor-hotspot {
+  position: absolute;
+  top: 70.9%;
+  left: 37.65%;
+  width: 24.8%;
+  height: 7.7%;
   border-radius: 2px;
-  color: #fff;
-  background: var(--green);
-  box-shadow: 0 1px 2px rgb(27 39 32 / 0.18);
-  font-size: clamp(0.95rem, 1.25vw, 1.2rem);
-  font-weight: 600;
-  letter-spacing: 0.095em;
-  text-decoration: none;
-  text-transform: uppercase;
 }
 
-.status a::after {
-  margin-left: 1rem;
-  content: "→";
-  font-size: 1.35em;
-  font-weight: 400;
-  line-height: 1;
+.editor-hotspot:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: -6px;
 }
 
-.status a:hover { background: #193d2f; }
-
-.status a:focus-visible {
-  outline: 3px solid var(--blue);
-  outline-offset: 4px;
-}
-
-.landscape {
-  position: relative;
-  z-index: 0;
-  width: calc(100% + 3rem);
-  min-height: clamp(9.5rem, 21vh, 14rem);
-  flex: 1 0 clamp(9.5rem, 21vh, 14rem);
-  margin: clamp(-0.5rem, -1vh, 0rem) -1.5rem 0;
-  background-image: linear-gradient(to bottom, var(--paper) 0%, transparent 24%), url("/townlines-fieldstone.png");
-  background-position: center top;
-  background-size: cover;
-  pointer-events: none;
-}
-
-@media (max-width: 48rem) {
-  .page {
-    min-height: 100svh;
-    padding: 1.25rem 1.15rem 0;
-  }
-
-  .masthead {
-    width: min(100%, 34rem);
-    min-width: 0;
-  }
-
-  .introduction { margin-top: -0.55rem; }
-
-  .tagline-lockup {
-    grid-template-columns: minmax(1.25rem, 1fr) auto minmax(1.25rem, 1fr);
-    gap: 0.7rem;
-  }
-
-  h1 {
-    font-size: clamp(0.68rem, 2.9vw, 0.9rem);
-    letter-spacing: 0.19em;
-  }
-
-  .introduction > p {
-    max-width: 35rem;
-    margin-top: 1.35rem;
-    font-size: clamp(1rem, 4.25vw, 1.15rem);
-    line-height: 1.48;
-  }
-
-  .status { margin-top: 1.35rem; }
-
-  .divider {
-    width: 4rem;
-    margin-bottom: 1.15rem;
-  }
-
-  .coming-soon {
-    font-size: clamp(2.55rem, 12.8vw, 4rem);
-    line-height: 0.96;
-  }
-
-  .status > p:not(.coming-soon) {
-    margin-bottom: 1rem;
-    font-size: clamp(1rem, 4.2vw, 1.16rem);
-  }
-
-  .status a {
-    min-height: 3.5rem;
-    padding-inline: 1.45rem 1.25rem;
-    font-size: 0.92rem;
-  }
-
-  .landscape {
-    width: calc(100% + 2.3rem);
-    min-height: 10rem;
-    flex-basis: 10rem;
-    margin: 0 -1.15rem;
-    background-position: center top;
-  }
-}
-
-@media (max-width: 24rem) {
-  .page { padding-top: 0.85rem; }
-
-  .tagline-lockup span { display: none; }
-
-  .tagline-lockup { display: block; }
-
-  h1 { white-space: normal; }
-
-  .landscape {
-    min-height: 8.5rem;
-    flex-basis: 8.5rem;
-  }
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
