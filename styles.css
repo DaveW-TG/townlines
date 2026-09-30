@@ -50,7 +50,6 @@ body {
   display: block;
   width: 100%;
   height: auto;
-  mix-blend-mode: multiply;
 }
 
 .introduction,
@@ -162,7 +161,7 @@ h1 {
   min-height: clamp(9rem, 21vh, 14rem);
   flex: 1 0 clamp(9rem, 21vh, 14rem);
   margin: -0.2rem -1.5rem 0;
-  background-image: linear-gradient(to bottom, var(--paper) 0%, transparent 23%), url("/townlines-fieldstone.png");
+  background-image: linear-gradient(to bottom, var(--paper) 0%, transparent 23%), url("/townlines-fieldstone-approved.webp");
   background-position: center top;
   background-size: cover;
   pointer-events: none;
