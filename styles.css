@@ -1,65 +1,244 @@
 :root {
   color-scheme: light;
-  background: #f0ede6;
+  --paper: #f4f1e9;
+  --ink: #171b18;
+  --green: #234a39;
+  --blue: #163e58;
+  --rust: #8b4b22;
 }
 
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
 html,
 body {
   min-width: 0;
   min-height: 100%;
   margin: 0;
-  background: #f0ede6;
 }
 
+html { background: var(--paper); }
+
 body {
-  overflow-x: hidden;
+  color: var(--ink);
+  background-color: var(--paper);
+  background-image:
+    radial-gradient(circle at 17% 23%, rgb(60 50 35 / 0.035) 0 0.7px, transparent 0.9px),
+    radial-gradient(circle at 78% 62%, rgb(60 50 35 / 0.025) 0 0.6px, transparent 0.85px);
+  background-size: 7px 7px, 11px 11px;
+  font-family: Georgia, "Times New Roman", serif;
+  text-rendering: optimizeLegibility;
 }
 
 .page {
   display: flex;
-  width: 100%;
   min-height: 100svh;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  padding: clamp(1rem, 2.2vh, 1.7rem) 1.5rem 0;
+  text-align: center;
 }
 
-.approved-page {
+.masthead {
   position: relative;
-  width: min(100%, 1536px);
-  align-self: flex-start;
+  z-index: 1;
+  width: min(45vw, 64vh, 44rem);
+  min-width: 28rem;
 }
 
-.approved-page img {
+.logo {
   display: block;
   width: 100%;
   height: auto;
+  mix-blend-mode: multiply;
 }
 
-.editor-hotspot {
-  position: absolute;
-  top: 70.9%;
-  left: 37.65%;
-  width: 24.8%;
-  height: 7.7%;
-  border-radius: 2px;
+.introduction,
+.status {
+  position: relative;
+  z-index: 1;
 }
 
-.editor-hotspot:focus-visible {
-  outline: 3px solid #fff;
-  outline-offset: -6px;
+.introduction {
+  width: min(100%, 63rem);
+  margin-top: clamp(-1.35rem, -1.8vh, -0.7rem);
 }
 
-.sr-only {
-  position: absolute;
-  width: 1px;
+.tagline-lockup {
+  display: grid;
+  grid-template-columns: minmax(2.5rem, 1fr) auto minmax(2.5rem, 1fr);
+  align-items: center;
+  gap: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.tagline-lockup span {
   height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
+  background: var(--green);
+  opacity: 0.82;
+}
+
+h1,
+p { margin-top: 0; }
+
+h1 {
+  margin-bottom: 0;
+  color: var(--green);
+  font-size: clamp(0.86rem, 1.22vw, 1.28rem);
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: 0.31em;
+  text-transform: uppercase;
   white-space: nowrap;
-  border: 0;
+}
+
+.introduction > p {
+  max-width: 55rem;
+  margin: clamp(1.35rem, 2.8vh, 2rem) auto 0;
+  font-size: clamp(1.05rem, 1.55vw, 1.52rem);
+  line-height: 1.48;
+}
+
+.status { margin-top: clamp(1.05rem, 2.1vh, 1.6rem); }
+
+.divider {
+  display: block;
+  width: 5.75rem;
+  height: 2px;
+  margin: 0 auto clamp(1rem, 1.9vh, 1.4rem);
+  background: var(--rust);
+}
+
+.coming-soon {
+  margin-bottom: clamp(0.3rem, 0.7vh, 0.55rem);
+  color: var(--blue);
+  font-size: clamp(3rem, 5.2vw, 5.1rem);
+  font-weight: 700;
+  line-height: 0.95;
+  letter-spacing: 0.035em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.status > p:not(.coming-soon) {
+  margin-bottom: clamp(0.75rem, 1.4vh, 1rem);
+  font-size: clamp(1.05rem, 1.65vw, 1.55rem);
+  line-height: 1.35;
+}
+
+.status a {
+  display: inline-flex;
+  min-height: 3.7rem;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0.85rem 1.65rem 0.8rem 1.9rem;
+  border: 1px solid rgb(10 39 29 / 0.5);
+  border-radius: 2px;
+  color: #fff;
+  background: var(--green);
+  box-shadow: 0 1px 2px rgb(27 39 32 / 0.18);
+  font-size: clamp(0.95rem, 1.25vw, 1.2rem);
+  font-weight: 600;
+  letter-spacing: 0.095em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.status a span {
+  font-size: 1.35em;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.status a:hover { background: #193d2f; }
+
+.status a:focus-visible {
+  outline: 3px solid var(--blue);
+  outline-offset: 4px;
+}
+
+.landscape {
+  width: calc(100% + 3rem);
+  min-height: clamp(9rem, 21vh, 14rem);
+  flex: 1 0 clamp(9rem, 21vh, 14rem);
+  margin: -0.2rem -1.5rem 0;
+  background-image: linear-gradient(to bottom, var(--paper) 0%, transparent 23%), url("/townlines-fieldstone.png");
+  background-position: center top;
+  background-size: cover;
+  pointer-events: none;
+}
+
+@media (max-width: 48rem) {
+  .page {
+    min-height: 100svh;
+    padding: 0.9rem 1rem 0;
+  }
+
+  .masthead {
+    width: min(100%, 32rem);
+    min-width: 0;
+  }
+
+  .introduction {
+    width: 100%;
+    margin-top: -0.45rem;
+  }
+
+  .tagline-lockup {
+    grid-template-columns: minmax(0.75rem, 1fr) auto minmax(0.75rem, 1fr);
+    gap: 0.65rem;
+  }
+
+  h1 {
+    font-size: clamp(0.65rem, 2.75vw, 0.84rem);
+    letter-spacing: 0.16em;
+  }
+
+  .introduction > p {
+    max-width: 34rem;
+    margin-top: 1.1rem;
+    font-size: clamp(1rem, 4vw, 1.12rem);
+    line-height: 1.43;
+  }
+
+  .status { margin-top: 1rem; }
+
+  .divider {
+    width: 3.75rem;
+    margin-bottom: 0.9rem;
+  }
+
+  .coming-soon {
+    font-size: clamp(2.25rem, 10.5vw, 3rem);
+    line-height: 1;
+    letter-spacing: 0.01em;
+  }
+
+  .status > p:not(.coming-soon) {
+    margin-bottom: 0.85rem;
+    font-size: clamp(1rem, 4vw, 1.12rem);
+  }
+
+  .status a {
+    min-height: 3.4rem;
+    max-width: 100%;
+    gap: 0.75rem;
+    padding-inline: 1.25rem 1.1rem;
+    font-size: 0.9rem;
+  }
+
+  .landscape {
+    width: calc(100% + 2rem);
+    min-height: clamp(7.5rem, 19vh, 10rem);
+    flex: 0 0 clamp(7.5rem, 19vh, 10rem);
+    margin: auto -1rem 0;
+    background-position: center top;
+  }
+}
+
+@media (max-width: 23rem) {
+  .tagline-lockup span { display: none; }
+  .tagline-lockup { display: block; }
+  h1 { white-space: normal; }
+  .coming-soon { font-size: 2.15rem; }
 }
