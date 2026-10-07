@@ -1,0 +1,14 @@
+{
+  "site": "TownLines",
+  "canonicalUrl": "https://townlines.news",
+  "repository": "https://github.com/DaveW-TG/townlines.git",
+  "branch": "main",
+  "vercel": {
+    "projectName": "townlines",
+    "projectId": "prj_L5a1eSyw8UAugqGzIqBwzdQZzVsQ",
+    "teamId": "team_jUlH90TuExlmiuI0fwD4Ucbk",
+    "rootDirectory": ".",
+    "buildCommand": "npm run build",
+    "outputDirectory": "dist"
+  }
+}

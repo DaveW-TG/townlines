@@ -1,0 +1,6 @@
+{
+  "name": "townlines",
+  "private": true,
+  "type": "module",
+  "scripts": { "build": "node scripts/build.mjs", "validate": "npm run build && node scripts/validate.mjs" }
+}

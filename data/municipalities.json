@@ -1,0 +1,83 @@
+[
+  {
+    "slug": "acton",
+    "name": "Acton",
+    "state": "Massachusetts",
+    "county": "Middlesex County",
+    "reportStatus": "published",
+    "fiscalYear": "FY2026",
+    "municipalBudgetTotal": 441300,
+    "staffingAmount": 399321,
+    "explicitProgramSupport": [
+      {"description": "Instructional and direct-service staff, including exercise instruction", "amount": 25800},
+      {"description": "Contractual fitness instructor", "amount": 3000},
+      {"description": "Program-event supplies", "amount": 2000}
+    ],
+    "supplementalSupport": [
+      {"description": "State COA Formula Grant supports two part-time positions", "amount": null},
+      {"description": "Planned fee-supported revolving-fund activity", "amount": 25000},
+      {"description": "Friends, grants, partners and volunteers", "amount": null}
+    ],
+    "budgetSummary": "Acton’s FY2026 municipal Council on Aging budget is $441,300 and primarily funds staff who provide, organize and support Senior Center services and programming. Exercise instruction is explicitly funded, along with $2,000 for program-event supplies, while state Formula Grant funding supports an activities assistant and another customer-service position and a fee-supported revolving fund is budgeted at $25,000. The documents do not separately identify how much municipal money is spent on individual educational, cultural or creative programs, many of which are also supported by the Friends of the Acton COA, grants, partners, volunteers and participant revenue.",
+    "residentsGetSummary": "Acton residents receive a dense and varied calendar of enrichment: history and current-affairs talks, literature seminars, author and artist presentations, concerts and theater, art and cooking workshops, technology help, discussion groups and intergenerational social programs. Many offerings are free to Acton residents, while some classes or events charge a participant fee.",
+    "programExamples": [
+      {"title": "Literature and history", "description": "Seminars such as a program on Langston Hughes, plus recurring history and current-affairs discussions."},
+      {"title": "Arts and making", "description": "Watercolor and other hands-on creative classes, with participant fees identified for some multi-session offerings."},
+      {"title": "Technology instruction", "description": "Individual and small-group help with phones, tablets, computers and common digital tasks."},
+      {"title": "Music and performance", "description": "Concerts, folk-music gatherings and dramatic or historical performances."}
+    ],
+    "supportMechanisms": ["Municipal appropriation", "State COA Formula Grant", "Friends of the Acton COA", "Local Cultural Council and other grants", "Participant fees and program revenue", "Community partners", "Volunteers and peer leaders"],
+    "supportSummary": "The municipal budget visibly supports the staff and infrastructure that make the calendar possible, including explicit exercise-instruction and program-supply lines. State Formula Grant money supports two part-time positions. The Friends of the Acton COA publicly identifies support for many programs, and newsletters also show grants, community partners, participant fees, volunteers and peer leaders contributing to particular offerings.",
+    "recordLimitations": "The public record does not assign costs to most individual educational, cultural or creative activities or disclose each funding source’s share; the $25,000 revolving-fund plan is an estimate, not proof that the full amount was collected or spent.",
+    "sources": [
+      {"label": "Town of Acton FY2026 recommended budget", "url": "https://www.acton-ma.gov/DocumentCenter/View/10178", "note": "COA budget, staffing and operating detail"},
+      {"label": "FY2026 budget transmittal to the Finance Committee", "url": "https://www.actonma.gov/DocumentCenter/View/10402/FY2026-Budget-Transmittal-to-Finance-Committee", "note": "Revolving-fund and budget context"},
+      {"label": "Acton COA April 2026 newsletter", "url": "https://actoncoa.com/DocumentCenter/View/2505/April-2026", "note": "Programs, fees and acknowledgments"},
+      {"label": "Acton COA June 2026 newsletter", "url": "https://actoncoa.com/DocumentCenter/View/2594/June-2026", "note": "Programs, fees and acknowledgments"},
+      {"label": "Friends of the Acton COA — programs funded", "url": "https://friendsofactoncoa.com/acton-coa-programs-funded/", "note": "Friends-supported programming"}
+    ],
+    "lastReviewed": "October 7, 2026",
+    "internalCharacteristics": {"dedicatedProgramStaff": true, "friendsSupport": true, "grantSupport": true, "culturalCouncilSupport": true, "participantFunding": true, "partnerSupport": true, "volunteerOrPeerLed": true}
+  },
+  {
+    "slug": "greenfield",
+    "name": "Greenfield",
+    "state": "Massachusetts",
+    "county": "Franklin County",
+    "reportStatus": "published",
+    "fiscalYear": "FY2026",
+    "municipalBudgetTotal": 177223,
+    "staffingAmount": 172623,
+    "explicitProgramSupport": [
+      {"description": "Recreation-program supplies", "amount": 300}
+    ],
+    "supplementalSupport": [
+      {"description": "State COA Formula Grant salary support", "amount": null},
+      {"description": "Community Development Block Grant salary support", "amount": null},
+      {"description": "Revolving-fund authority for purchased services", "amount": 14000},
+      {"description": "Revolving-fund authority for supplies", "amount": 1000},
+      {"description": "Cultural Council grants, partners and volunteers", "amount": null}
+    ],
+    "budgetSummary": "Greenfield’s FY2026 municipal Council on Aging budget primarily funds staff, including an Activities Director, with additional salary support from grants and Community Development Block Grant funds. The general-fund budget identifies $300 for recreation-program supplies, while Fund 1558 may use fees, activity revenue and donations for up to $14,000 in purchased services and $1,000 in supplies; Cultural Council grants have separately supported Senior Center performances. Online records still do not disclose Fund 1558’s actual revenue, balance, vendors or transaction-level spending, so they do not show how much Greenfield paid for individual educational, cultural or creative programs.",
+    "residentsGetSummary": "Greenfield residents receive a recurring mix of educational talks, creative activities, live music, workshops and discussion-based social programs. Recent newsletters show meaningful enrichment alongside the center’s meals, exercise, transportation and routine services, but usually do not identify the complete cost or funding source for an individual event.",
+    "programExamples": [
+      {"title": "Live music and local history", "description": "“Memories: Music of the 60s & 70s” combined a six-piece band with a multimedia program."},
+      {"title": "Creative participation", "description": "“Drop-In and Draw” invited residents to make art with guidance from a local artist."},
+      {"title": "Speakers and workshops", "description": "Newsletters regularly include educational presentations and practical workshops beyond routine services."},
+      {"title": "Social learning", "description": "Discussion-based activities give residents recurring opportunities to learn with and from one another."}
+    ],
+    "supportMechanisms": ["Municipal appropriation", "State COA Formula Grant", "Community Development Block Grant", "Local Cultural Council grants", "Participant fees, activity revenue and donations", "Community partners", "Volunteers and peer leaders"],
+    "supportSummary": "The town budget supports staff, including an Activities Director, and identifies a small recreation-supplies line. State and federal grant sources also support salaries. A COA revolving fund is authorized to use fees, activity revenue and donations for purchased services and supplies, while Cultural Council awards and community participation provide additional routes for programming support.",
+    "recordLimitations": "Public online records do not show Fund 1558’s actual revenue, balances, vendors or transactions, so the $15,000 authorization cannot establish what was spent or the complete cost and funding mix for individual programs.",
+    "sources": [
+      {"label": "City of Greenfield FY2026 budget book", "url": "https://cms5.revize.com/revize/greenfield/Document_Center/Department/Accounting%20%26%20Finance/Accounting%20Documents%20%26%20Forms/Accounting%20Department%20Budgets/FY26%20Budget%20Book%20Final.pdf", "note": "COA budget, grant-supported salaries and revolving-fund authorization"},
+      {"label": "Greenfield Senior Center March 2025 newsletter", "url": "https://container.mycommunityonline.com/bulletins/06/5099/20250301N.pdf", "note": "Programs and services"},
+      {"label": "Greenfield Senior Center May 2025 newsletter", "url": "https://container.mycommunityonline.com/bulletins/06/5099/20250501N.pdf", "note": "Programs and services"},
+      {"label": "Greenfield Senior Center June 2025 newsletter", "url": "https://container.mycommunityonline.com/bulletins/06/5099/20250601N.pdf", "note": "Music, arts and other programs"},
+      {"label": "Greenfield Senior Center August 2025 newsletter", "url": "https://container.mycommunityonline.com/bulletins/06/5099/20250801N.pdf", "note": "Programs and services"},
+      {"label": "Greenfield Local Cultural Council", "url": "https://massculturalcouncil.org/local-council/Greenfield/", "note": "Cultural Council support, including a Senior Center program award"}
+    ],
+    "lastReviewed": "October 7, 2026",
+    "internalCharacteristics": {"dedicatedProgramStaff": true, "friendsSupport": false, "grantSupport": true, "culturalCouncilSupport": true, "participantFunding": true, "partnerSupport": true, "volunteerOrPeerLed": true}
+  }
+]
